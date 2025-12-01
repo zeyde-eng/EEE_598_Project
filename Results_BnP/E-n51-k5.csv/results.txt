@@ -1,0 +1,56 @@
+================================
+Inputs to Model:
+================================
+Instance: E-n51-k5.csv
+Number Vehicles: 5
+Capacity: 160.0
+
+================================
+Results of Model:
+================================
+Objective Solution: 593.7318839418942
+Upper Bound (UB): 593.73
+Lower Bound (LB): 565.06
+Gap: 28.67 (4.83%)
+Nodes Explored: 500
+Solve Time: 9979.511999845505 seconds
+Cars Used: 5
+CG iterations: 8
+
+================================
+Routes by Customers:
+================================
+Route 1: Nodes [1, 19, 5, 18, 38, 45, 16, 46, 34, 40, 11, 33, 47, 52]
+  Customers served (0-indexed): [18, 4, 17, 37, 44, 15, 45, 33, 39, 10, 32, 46]
+Route 2: Nodes [1, 15, 26, 14, 42, 41, 20, 43, 18, 48, 52]
+  Customers served (0-indexed): [14, 25, 13, 41, 40, 19, 42, 17, 47]
+Route 3: Nodes [1, 12, 39, 10, 51, 17, 22, 30, 21, 36, 37, 4, 2, 52]
+  Customers served (0-indexed): [11, 38, 9, 50, 16, 21, 29, 20, 35, 36, 3, 1]
+Route 4: Nodes [1, 7, 49, 24, 25, 44, 8, 27, 9, 32, 29, 23, 2, 52]
+  Customers served (0-indexed): [6, 48, 23, 24, 43, 7, 26, 8, 31, 28, 22, 1]
+Route 5: Nodes [1, 13, 6, 50, 31, 35, 3, 28, 52]
+  Customers served (0-indexed): [12, 5, 49, 30, 34, 2, 27]
+
+================================
+Customer Coverage Analysis:
+================================
+Total customer visits: 52
+Unique customers served: 50
+
+DUPLICATE CUSTOMERS FOUND:
+  Customer 1 (node 2) appears 2 times
+    - Route 3
+    - Route 4
+  Customer 17 (node 18) appears 2 times
+    - Route 1
+    - Route 2
+
+================================
+Routes by Nodes:
+================================
+Route 1: Any[1, 19, 5, 18, 38, 45, 16, 46, 34, 40, 11, 33, 47, 52]
+Route 2: Any[1, 15, 26, 14, 42, 41, 20, 43, 18, 48, 52]
+Route 3: Any[1, 12, 39, 10, 51, 17, 22, 30, 21, 36, 37, 4, 2, 52]
+Route 4: Any[1, 7, 49, 24, 25, 44, 8, 27, 9, 32, 29, 23, 2, 52]
+Route 5: Any[1, 13, 6, 50, 31, 35, 3, 28, 52]
+

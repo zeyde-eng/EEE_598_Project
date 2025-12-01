@@ -1,0 +1,88 @@
+================================
+Inputs to Model:
+================================
+Instance: A-n60-k9.csv
+Number Vehicles: 9
+Capacity: 100.0
+
+================================
+Results of Model:
+================================
+Objective Solution: 1780.8191479822824
+Upper Bound (UB): 1780.82
+Lower Bound (LB): 1771.9
+Gap: 8.92 (0.5%)
+Nodes Explored: 7
+Solve Time: 568.6199998855591 seconds
+Cars Used: 9
+CG iterations: 25
+
+================================
+Routes by Customers:
+================================
+Route 1: Nodes [1, 6, 55, 11, 23, 49, 50, 31, 47, 61]
+  Customers served (0-indexed): [5, 54, 10, 22, 48, 49, 30, 46]
+Route 2: Nodes [1, 18, 58, 9, 30, 39, 61]
+  Customers served (0-indexed): [17, 57, 8, 29, 38]
+Route 3: Nodes [1, 10, 52, 43, 11, 37, 2, 3, 47, 21, 17, 61]
+  Customers served (0-indexed): [9, 51, 42, 10, 36, 1, 2, 46, 20, 16]
+Route 4: Nodes [1, 27, 28, 14, 30, 8, 20, 53, 61]
+  Customers served (0-indexed): [26, 27, 13, 29, 7, 19, 52]
+Route 5: Nodes [1, 23, 6, 46, 33, 36, 20, 15, 61]
+  Customers served (0-indexed): [22, 5, 45, 32, 35, 19, 14]
+Route 6: Nodes [1, 24, 48, 35, 41, 47, 26, 42, 61]
+  Customers served (0-indexed): [23, 47, 34, 40, 46, 25, 41]
+Route 7: Nodes [1, 13, 57, 44, 40, 51, 56, 20, 34, 19, 61]
+  Customers served (0-indexed): [12, 56, 43, 39, 50, 55, 19, 33, 18]
+Route 8: Nodes [1, 25, 3, 29, 32, 45, 54, 4, 61]
+  Customers served (0-indexed): [24, 2, 28, 31, 44, 53, 3]
+Route 9: Nodes [1, 12, 5, 22, 7, 59, 56, 16, 38, 60, 61]
+  Customers served (0-indexed): [11, 4, 21, 6, 58, 55, 15, 37, 59]
+
+================================
+Customer Coverage Analysis:
+================================
+Total customer visits: 69
+Unique customers served: 59
+
+DUPLICATE CUSTOMERS FOUND:
+  Customer 2 (node 3) appears 2 times
+    - Route 3
+    - Route 8
+  Customer 5 (node 6) appears 2 times
+    - Route 1
+    - Route 5
+  Customer 10 (node 11) appears 2 times
+    - Route 1
+    - Route 3
+  Customer 19 (node 20) appears 3 times
+    - Route 4
+    - Route 5
+    - Route 7
+  Customer 22 (node 23) appears 2 times
+    - Route 1
+    - Route 5
+  Customer 29 (node 30) appears 2 times
+    - Route 2
+    - Route 4
+  Customer 46 (node 47) appears 3 times
+    - Route 1
+    - Route 3
+    - Route 6
+  Customer 55 (node 56) appears 2 times
+    - Route 7
+    - Route 9
+
+================================
+Routes by Nodes:
+================================
+Route 1: Any[1, 6, 55, 11, 23, 49, 50, 31, 47, 61]
+Route 2: Any[1, 18, 58, 9, 30, 39, 61]
+Route 3: Any[1, 10, 52, 43, 11, 37, 2, 3, 47, 21, 17, 61]
+Route 4: Any[1, 27, 28, 14, 30, 8, 20, 53, 61]
+Route 5: Any[1, 23, 6, 46, 33, 36, 20, 15, 61]
+Route 6: Any[1, 24, 48, 35, 41, 47, 26, 42, 61]
+Route 7: Any[1, 13, 57, 44, 40, 51, 56, 20, 34, 19, 61]
+Route 8: Any[1, 25, 3, 29, 32, 45, 54, 4, 61]
+Route 9: Any[1, 12, 5, 22, 7, 59, 56, 16, 38, 60, 61]
+

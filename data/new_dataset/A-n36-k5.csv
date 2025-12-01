@@ -1,0 +1,37 @@
+instance_name,dataset,node_id,node_type,x_coord,y_coord,demand,demand_type,distribution,parameters
+A-n36-k5,Christiansen and Lysgaard (2007),1,depot,15.0,19.0,0.0,none,,
+A-n36-k5,Christiansen and Lysgaard (2007),2,customer,1.0,49.0,1.0,stochastic,Poisson,{'lambda': 1.0}
+A-n36-k5,Christiansen and Lysgaard (2007),3,customer,87.0,25.0,14.0,stochastic,Poisson,{'lambda': 14.0}
+A-n36-k5,Christiansen and Lysgaard (2007),4,customer,69.0,65.0,15.0,stochastic,Poisson,{'lambda': 15.0}
+A-n36-k5,Christiansen and Lysgaard (2007),5,customer,93.0,91.0,11.0,stochastic,Poisson,{'lambda': 11.0}
+A-n36-k5,Christiansen and Lysgaard (2007),6,customer,33.0,31.0,18.0,stochastic,Poisson,{'lambda': 18.0}
+A-n36-k5,Christiansen and Lysgaard (2007),7,customer,71.0,61.0,2.0,stochastic,Poisson,{'lambda': 2.0}
+A-n36-k5,Christiansen and Lysgaard (2007),8,customer,29.0,9.0,22.0,stochastic,Poisson,{'lambda': 22.0}
+A-n36-k5,Christiansen and Lysgaard (2007),9,customer,93.0,7.0,7.0,stochastic,Poisson,{'lambda': 7.0}
+A-n36-k5,Christiansen and Lysgaard (2007),10,customer,55.0,47.0,18.0,stochastic,Poisson,{'lambda': 18.0}
+A-n36-k5,Christiansen and Lysgaard (2007),11,customer,23.0,13.0,23.0,stochastic,Poisson,{'lambda': 23.0}
+A-n36-k5,Christiansen and Lysgaard (2007),12,customer,19.0,47.0,12.0,stochastic,Poisson,{'lambda': 12.0}
+A-n36-k5,Christiansen and Lysgaard (2007),13,customer,57.0,63.0,21.0,stochastic,Poisson,{'lambda': 21.0}
+A-n36-k5,Christiansen and Lysgaard (2007),14,customer,5.0,95.0,2.0,stochastic,Poisson,{'lambda': 2.0}
+A-n36-k5,Christiansen and Lysgaard (2007),15,customer,65.0,43.0,14.0,stochastic,Poisson,{'lambda': 14.0}
+A-n36-k5,Christiansen and Lysgaard (2007),16,customer,69.0,1.0,9.0,stochastic,Poisson,{'lambda': 9.0}
+A-n36-k5,Christiansen and Lysgaard (2007),17,customer,3.0,25.0,10.0,stochastic,Poisson,{'lambda': 10.0}
+A-n36-k5,Christiansen and Lysgaard (2007),18,customer,19.0,91.0,4.0,stochastic,Poisson,{'lambda': 4.0}
+A-n36-k5,Christiansen and Lysgaard (2007),19,customer,21.0,81.0,19.0,stochastic,Poisson,{'lambda': 19.0}
+A-n36-k5,Christiansen and Lysgaard (2007),20,customer,67.0,91.0,2.0,stochastic,Poisson,{'lambda': 2.0}
+A-n36-k5,Christiansen and Lysgaard (2007),21,customer,41.0,23.0,20.0,stochastic,Poisson,{'lambda': 20.0}
+A-n36-k5,Christiansen and Lysgaard (2007),22,customer,19.0,75.0,15.0,stochastic,Poisson,{'lambda': 15.0}
+A-n36-k5,Christiansen and Lysgaard (2007),23,customer,15.0,79.0,11.0,stochastic,Poisson,{'lambda': 11.0}
+A-n36-k5,Christiansen and Lysgaard (2007),24,customer,79.0,47.0,6.0,stochastic,Poisson,{'lambda': 6.0}
+A-n36-k5,Christiansen and Lysgaard (2007),25,customer,19.0,65.0,13.0,stochastic,Poisson,{'lambda': 13.0}
+A-n36-k5,Christiansen and Lysgaard (2007),26,customer,27.0,49.0,19.0,stochastic,Poisson,{'lambda': 19.0}
+A-n36-k5,Christiansen and Lysgaard (2007),27,customer,29.0,17.0,13.0,stochastic,Poisson,{'lambda': 13.0}
+A-n36-k5,Christiansen and Lysgaard (2007),28,customer,25.0,65.0,8.0,stochastic,Poisson,{'lambda': 8.0}
+A-n36-k5,Christiansen and Lysgaard (2007),29,customer,59.0,51.0,15.0,stochastic,Poisson,{'lambda': 15.0}
+A-n36-k5,Christiansen and Lysgaard (2007),30,customer,27.0,95.0,18.0,stochastic,Poisson,{'lambda': 18.0}
+A-n36-k5,Christiansen and Lysgaard (2007),31,customer,21.0,91.0,11.0,stochastic,Poisson,{'lambda': 11.0}
+A-n36-k5,Christiansen and Lysgaard (2007),32,customer,61.0,83.0,21.0,stochastic,Poisson,{'lambda': 21.0}
+A-n36-k5,Christiansen and Lysgaard (2007),33,customer,15.0,83.0,12.0,stochastic,Poisson,{'lambda': 12.0}
+A-n36-k5,Christiansen and Lysgaard (2007),34,customer,31.0,87.0,2.0,stochastic,Poisson,{'lambda': 2.0}
+A-n36-k5,Christiansen and Lysgaard (2007),35,customer,71.0,41.0,23.0,stochastic,Poisson,{'lambda': 23.0}
+A-n36-k5,Christiansen and Lysgaard (2007),36,customer,91.0,21.0,11.0,stochastic,Poisson,{'lambda': 11.0}

@@ -1,0 +1,53 @@
+================================
+Inputs to Model:
+================================
+Instance: A-n32-k5.csv
+Number Vehicles: 5
+Capacity: 100.0
+
+================================
+Results of Model:
+================================
+Objective Solution: 922.9028503593828
+Upper Bound (UB): 922.9
+Lower Bound (LB): 920.24
+Gap: 2.66 (0.29%)
+Nodes Explored: 97
+Solve Time: 3628.6449999809265 seconds
+Cars Used: 5
+CG iterations: 2
+
+================================
+Routes by Customers:
+================================
+Route 1: Nodes [1, 31, 33]
+  Customers served (0-indexed): [30]
+Route 2: Nodes [1, 18, 20, 32, 22, 14, 17, 27, 33]
+  Customers served (0-indexed): [17, 19, 31, 21, 13, 16, 26]
+Route 3: Nodes [1, 13, 2, 8, 25, 28, 33]
+  Customers served (0-indexed): [12, 1, 7, 24, 27]
+Route 4: Nodes [1, 3, 4, 24, 29, 5, 12, 9, 23, 15, 27, 33]
+  Customers served (0-indexed): [2, 3, 23, 28, 4, 11, 8, 22, 14, 26]
+Route 5: Nodes [1, 21, 6, 26, 11, 30, 16, 10, 19, 7, 33]
+  Customers served (0-indexed): [20, 5, 25, 10, 29, 15, 9, 18, 6]
+
+================================
+Customer Coverage Analysis:
+================================
+Total customer visits: 32
+Unique customers served: 31
+
+DUPLICATE CUSTOMERS FOUND:
+  Customer 26 (node 27) appears 2 times
+    - Route 2
+    - Route 4
+
+================================
+Routes by Nodes:
+================================
+Route 1: Any[1, 31, 33]
+Route 2: Any[1, 18, 20, 32, 22, 14, 17, 27, 33]
+Route 3: Any[1, 13, 2, 8, 25, 28, 33]
+Route 4: Any[1, 3, 4, 24, 29, 5, 12, 9, 23, 15, 27, 33]
+Route 5: Any[1, 21, 6, 26, 11, 30, 16, 10, 19, 7, 33]
+

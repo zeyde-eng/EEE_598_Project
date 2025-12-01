@@ -1,0 +1,37 @@
+================================
+Inputs to Model:
+================================
+Instance: E-n22-k4.csv
+Number Vehicles: 4
+Capacity: 6000.0
+
+================================
+Results of Model:
+================================
+Objective Solution: 305.62482848970495
+Upper Bound (UB): 305.62
+Lower Bound (LB): 305.62
+Gap: 0.0 (0.0%)
+Nodes Explored: 1
+Solve Time: 12.765000104904175 seconds
+Cars Used: 1
+CG iterations: 2
+
+================================
+Routes by Customers:
+================================
+Route 1: Nodes [1, 2, 3, 6, 8, 10, 11, 9, 7, 4, 5, 12, 14, 20, 22, 18, 21, 19, 16, 13, 15, 17, 23]
+  Customers served (0-indexed): [1, 2, 5, 7, 9, 10, 8, 6, 3, 4, 11, 13, 19, 21, 17, 20, 18, 15, 12, 14, 16]
+
+================================
+Customer Coverage Analysis:
+================================
+Total customer visits: 21
+Unique customers served: 21
+No duplicate customers - all customers served exactly once
+
+================================
+Routes by Nodes:
+================================
+Route 1: Any[1, 2, 3, 6, 8, 10, 11, 9, 7, 4, 5, 12, 14, 20, 22, 18, 21, 19, 16, 13, 15, 17, 23]
+

@@ -1,0 +1,63 @@
+================================
+Inputs to Model:
+================================
+Instance: A-n46-k7.csv
+Number Vehicles: 6
+Capacity: 100.0
+
+================================
+Results of Model:
+================================
+Objective Solution: 1121.0963016956457
+Upper Bound (UB): 1121.1
+Lower Bound (LB): 1073.8
+Gap: 47.3 (4.22%)
+Nodes Explored: 97
+Solve Time: 2990.513000011444 seconds
+Cars Used: 7
+CG iterations: 27
+
+================================
+Routes by Customers:
+================================
+Route 1: Nodes [1, 10, 47]
+  Customers served (0-indexed): [9]
+Route 2: Nodes [1, 19, 36, 13, 8, 40, 33, 47]
+  Customers served (0-indexed): [18, 35, 12, 7, 39, 32]
+Route 3: Nodes [1, 26, 45, 11, 23, 4, 37, 24, 47]
+  Customers served (0-indexed): [25, 44, 10, 22, 3, 36, 23]
+Route 4: Nodes [1, 3, 38, 31, 5, 39, 37, 20, 47]
+  Customers served (0-indexed): [2, 37, 30, 4, 38, 36, 19]
+Route 5: Nodes [1, 27, 14, 44, 15, 7, 46, 18, 47]
+  Customers served (0-indexed): [26, 13, 43, 14, 6, 45, 17]
+Route 6: Nodes [1, 30, 32, 35, 41, 2, 28, 21, 42, 22, 29, 47]
+  Customers served (0-indexed): [29, 31, 34, 40, 1, 27, 20, 41, 21, 28]
+Route 7: Nodes [1, 25, 17, 43, 16, 34, 9, 12, 37, 6, 39, 47]
+  Customers served (0-indexed): [24, 16, 42, 15, 33, 8, 11, 36, 5, 38]
+
+================================
+Customer Coverage Analysis:
+================================
+Total customer visits: 48
+Unique customers served: 45
+
+DUPLICATE CUSTOMERS FOUND:
+  Customer 36 (node 37) appears 3 times
+    - Route 3
+    - Route 4
+    - Route 7
+  Customer 38 (node 39) appears 2 times
+    - Route 4
+    - Route 7
+
+================================
+Routes by Nodes:
+================================
+Route 1: Any[1, 10, 47]
+Route 2: Any[1, 19, 36, 13, 8, 40, 33, 47]
+Route 3: Any[1, 26, 45, 11, 23, 4, 37, 24, 47]
+Route 4: Any[1, 3, 38, 31, 5, 39, 37, 20, 47]
+Route 5: Any[1, 27, 14, 44, 15, 7, 46, 18, 47]
+Route 6: Any[1, 30, 32, 35, 41, 2, 28, 21, 42, 22, 29, 47]
+Route 7: Any[1, 25, 17, 43, 16, 34, 9, 12, 37, 6, 39, 47]
+

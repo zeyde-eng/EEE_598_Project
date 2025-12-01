@@ -1,0 +1,68 @@
+================================
+Inputs to Model:
+================================
+Instance: A-n48-k7.csv
+Number Vehicles: 6
+Capacity: 100.0
+
+================================
+Results of Model:
+================================
+Objective Solution: 1335.4467858609278
+Upper Bound (UB): 1335.45
+Lower Bound (LB): 1335.43
+Gap: 0.02 (0.0%)
+Nodes Explored: 5
+Solve Time: 246.53800010681152 seconds
+Cars Used: 7
+CG iterations: 18
+
+================================
+Routes by Customers:
+================================
+Route 1: Nodes [1, 21, 27, 40, 9, 16, 10, 35, 41, 49]
+  Customers served (0-indexed): [20, 26, 39, 8, 15, 9, 34, 40]
+Route 2: Nodes [1, 26, 20, 39, 38, 4, 28, 46, 49]
+  Customers served (0-indexed): [25, 19, 38, 37, 3, 27, 45]
+Route 3: Nodes [1, 12, 14, 22, 47, 34, 48, 42, 49]
+  Customers served (0-indexed): [11, 13, 21, 46, 33, 47, 41]
+Route 4: Nodes [1, 11, 3, 48, 17, 36, 45, 49]
+  Customers served (0-indexed): [10, 2, 47, 16, 35, 44]
+Route 5: Nodes [1, 15, 18, 17, 29, 30, 31, 25, 5, 43, 8, 33, 49]
+  Customers served (0-indexed): [14, 17, 16, 28, 29, 30, 24, 4, 42, 7, 32]
+Route 6: Nodes [1, 13, 32, 2, 7, 23, 37, 49]
+  Customers served (0-indexed): [12, 31, 1, 6, 22, 36]
+Route 7: Nodes [1, 13, 6, 44, 24, 45, 19, 49]
+  Customers served (0-indexed): [12, 5, 43, 23, 44, 18]
+
+================================
+Customer Coverage Analysis:
+================================
+Total customer visits: 51
+Unique customers served: 47
+
+DUPLICATE CUSTOMERS FOUND:
+  Customer 12 (node 13) appears 2 times
+    - Route 6
+    - Route 7
+  Customer 16 (node 17) appears 2 times
+    - Route 4
+    - Route 5
+  Customer 44 (node 45) appears 2 times
+    - Route 4
+    - Route 7
+  Customer 47 (node 48) appears 2 times
+    - Route 3
+    - Route 4
+
+================================
+Routes by Nodes:
+================================
+Route 1: Any[1, 21, 27, 40, 9, 16, 10, 35, 41, 49]
+Route 2: Any[1, 26, 20, 39, 38, 4, 28, 46, 49]
+Route 3: Any[1, 12, 14, 22, 47, 34, 48, 42, 49]
+Route 4: Any[1, 11, 3, 48, 17, 36, 45, 49]
+Route 5: Any[1, 15, 18, 17, 29, 30, 31, 25, 5, 43, 8, 33, 49]
+Route 6: Any[1, 13, 32, 2, 7, 23, 37, 49]
+Route 7: Any[1, 13, 6, 44, 24, 45, 19, 49]
+
