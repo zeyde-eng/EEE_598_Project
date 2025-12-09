@@ -37,7 +37,6 @@ The VRPSD extends the classical Capacitated Vehicle Routing Problem (CVRP) by in
 minimize: Σ c_r * y_r
 subject to:
   Σ a_{i,r} * y_r ≥ 1    ∀ customers i   (each customer visited at least once)
-  Σ y_r ≤ K                               (fleet size constraint)
   y_r ≥ 0                 ∀ routes r      (route selection variables)
 ```
 
@@ -54,7 +53,7 @@ Dynamic programming with label-based state-space exploration:
   - L1.load ≤ L2.load (uses less capacity)
   - L1.cost ≤ L2.cost (has lower cost)
 - **Beam Search:** Maintains up to U_limit=1500 labels in queue for efficiency
-- **Reduced Cost:** c̄ = cost - Σπᵢ - μ (dual values from master problem)
+- **Reduced Cost:** c̄ = cost - Σπᵢ (dual values from master problem)
 
 #### 3. Branching Strategy
 
@@ -254,32 +253,6 @@ The repository includes 18 VRPSD instances adapted from Christiansen & Lysgaard 
 3. Beam search pruning in pricing subproblem
 
 E-series instances perform better due to large vehicle capacities minimizing recourse costs.
-
-## Known Issues & Future Improvements
-
-### Set Covering vs Set Partitioning
-
-**Current Issue:** The RMP uses set covering (≥1) constraints, which allow customers to appear in multiple routes in integer solutions.
-
-**Fix:** Change line 532 in the code from:
-```julia
-@constraint(model, sp_constr[i=1:n], sum(A[i,r]*y[r] for r=1:Ω) >= 1)
-```
-to:
-```julia
-@constraint(model, sp_constr[i=1:n], sum(A[i,r]*y[r] for r=1:Ω) == 1)
-```
-
-This enforces set partitioning where each customer is visited exactly once.
-
-### Potential Enhancements
-
-1. **Exact Recourse Calculation:** Replace SAA with closed-form expressions or dynamic programming
-2. **Advanced Branching:** Implement strong branching or hybrid branching strategies
-3. **Route Enumeration:** Add complete enumeration for small instances as verification
-4. **Parallel Pricing:** Solve multiple pricing subproblems in parallel
-5. **Column Pool Management:** Implement column deletion strategies for memory efficiency
-6. **Warm Start Heuristics:** Use advanced construction heuristics (Clarke-Wright, sweep algorithm)
 
 ## References
 
