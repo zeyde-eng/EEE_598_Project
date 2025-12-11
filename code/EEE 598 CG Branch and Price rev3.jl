@@ -11,11 +11,6 @@ Course: EEE 598 Final Project
 Key References:
 - Christiansen & Lysgaard (2007) - A branch-and-price algorithm for the VRPSD
 
-Revision 3 Changes:
-- Added fleet size constraint: Σy_r ≤ K (maximum K vehicles)
-- Updated initial routes to respect K constraint (multi-customer routes)
-- Modified column generation to incorporate fleet constraint dual value
-- Set partitioning formulation with vehicle limit
 
 =#
 
@@ -111,8 +106,6 @@ For customers i,j with fractional "togetherness", creates two branches:
 - Left child: Customers i,j must be on SAME route (together in at least one selected route)
 - Right child: Customers i,j must be on DIFFERENT routes (never together in any selected route)
 
-Note: With set covering, customers may appear in multiple routes. The branching constraint
-applies to the selected routes (those with y=1 in integer solution).
 """
 mutable struct BranchNode
     name::String
@@ -390,7 +383,6 @@ Includes fleet size constraint limiting number of vehicles to K.
 ```
 min Σ c_r * y_r                           (minimize total route costs)
 s.t. Σ a_{i,r} * y_r >= 1    ∀i ∈ customers  (set covering: each customer visited at least once)
-     Σ y_r ≤ K                           (fleet size: use at most K vehicles)
      y_r ≥ 0                  ∀r ∈ routes     (route selection variables)
 ```
 
@@ -399,7 +391,6 @@ s.t. Σ a_{i,r} * y_r >= 1    ∀i ∈ customers  (set covering: each customer v
 2. **Objective**: Minimize sum of route costs (including expected recourse costs)
 3. **A Matrix**: a_{i,r} = 1 if customer i is in route r, 0 otherwise
 4. **Set COVERING**: Each customer must be visited at least once
-5. **Fleet Constraint**: Total routes used cannot exceed K vehicles
 6. **Route Costs**: Include travel costs + expected stochastic recourse costs
 
 """
